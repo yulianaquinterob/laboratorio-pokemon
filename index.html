@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,59 +13,74 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/cristhian.css">
 </head>
-<body class="p-4">
-        <nav class="navbar bg-1 fg-2" >
-        <div class="container-fluid" >
-            <a class="navbar-brand" href="#" class="text-center" >
+
+<body >
+
+    <!-- //NAV BAR// -->
+
+    <nav class="navbar bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" class="text-center">
                 <img src="./assets/pokemonLogo.jpg" alt="Logo" width="200" height="110"
-                    class="d-inline-block align-text-top" >
+                    class="d-inline-block align-text-top">
             </a>
         </div>
     </nav>
+
+    <!-- //TITULO// -->
+
+
     <div id="div-titulo">
         <h1 id="titulo" class="shadows-into-light-regular">PokeAPI</h1>
     </div>
 
+    <!-- //ENCABEZADO// -->
+
     <h2 id="encabezado" class="mansalva-regular">Aqui podrás buscar tus pokemons favoritos y guardarlos!</h2>
 
-    <input type="text" id="inputPokemon" placeholder="Pokemon Nombre">
-    <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
-    <button type="button" id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
+    <Div id="buscador">
+        <input type="text" id="inputPokemon" placeholder="Pokemon Nombre">
+        <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
+        <button type="button" id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
+    </Div>
 
-    <h3 class="mt-4">Resultado</h3>
+
+    <h3 id="titulo-resultado" class="mt-4">Resultado</h3>
     <div id="resultadoBusqueda"></div>
+    
 
-    <h3 class="mt-4">Favoritos</h3>
+    <h3 id="titulo-favorito" class="mt-4">Favoritos</h3>
     <div id="listaFavoritos" class="d-flex flex-wrap gap-3"></div>
 
     <!-- //FOOTER// -->
 
     <div id="footer" class="delicious-handrawn-regular">
-    <div class="container">
-        <div class="row align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
 
-        <!-- Texto -->
-        <div class="col-12 col-md-8">
-            <div id="titulo-footer" class="delicious-handrawn-regular text-center">INTEGRANTES</div>
-            <div class="row">
-            <div class="col-6">
-                <p class="integrantes">Cristhian Beltrán</p>
-                <p class="integrantes">Yuliana Quintero</p>
-                <p class="integrantes">Juan David Corrales</p>
-            </div>
-            <div class="col-6">
-                <p class="integrantes">Alan Melo Giraldo</p>
-                <p class="integrantes">Dayana Marcela Vallejo</p>
-                <p class="integrantes">Jessica Manturano</p>
-            </div>
+                <!-- Texto -->
+                <div class="col-12 col-md-8">
+                    <div id="titulo-footer" class="delicious-handrawn-regular text-center">INTEGRANTES</div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="integrantes">Cristhian Beltrán</p>
+                            <p class="integrantes">Yuliana Quintero</p>
+                            <p class="integrantes">Juan David Corrales</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="integrantes">Alan Melo Giraldo</p>
+                            <p class="integrantes">Dayana Marcela Vallejo</p>
+                            <p class="integrantes">Jessica Manturano</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        </div>
-    </div>
     </div>
 
     <script type="module" src="js/Busqueda.js"></script>
     <script type="module" src="js/acciones.js"></script>
 </body>
+
 </html>
