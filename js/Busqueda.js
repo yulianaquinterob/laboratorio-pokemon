@@ -1,4 +1,5 @@
-
+import { obtenerPokemon } from "./api.js";
+import { crearTarjeta } from "./cards.js";
 
 const inputPokemon = document.getElementById("inputPokemon");
 const btnBuscar = document.getElementById("btnBuscar");
