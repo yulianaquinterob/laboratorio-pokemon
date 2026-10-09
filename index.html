@@ -8,10 +8,33 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Mansalva&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/cristhian.css" />
   </head>
   <body class="p-4">
     <div class="container">
-      <form action="">
+      <nav class="navbar bg-1 fg-2 d-flex justify-content-center">
+            <img
+              src="./assets/pokemonLogo.jpg"
+              alt="Logo"
+              width="200"
+              height="auto"
+            />
+      </nav>
+      <div id="div-titulo">
+        <h1 id="titulo" class="shadows-into-light-regular">PokeAPI</h1>
+      </div>
+
+      <h2 id="encabezado" class="mansalva-regular">
+        Aqui podrás buscar tus pokemons favoritos y guardarlos!
+      </h2>
+
+      <form action="" class="d-flex justify-content-center gap-2 my-5">
         <input type="text" id="inputPokemon" placeholder="Pokemon Nombre" />
         <button type="submit" id="btnBuscar" class="btn btn-primary">
           Buscar
@@ -27,12 +50,41 @@
 
       <h3 class="mt-4">Favoritos</h3>
       <div id="listaFavoritos" class="d-flex flex-wrap gap-3"></div>
-    </div>
 
-    <script type="module" src="./js/card.js"></script>
-    <script type="module" src="./js/container-cards.js"></script>
+      <!-- //FOOTER// -->
+      <div id="footer" class="delicious-handrawn-regular">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <!-- Texto -->
+            <div class="col-12 col-md-8">
+              <div
+                id="titulo-footer"
+                class="delicious-handrawn-regular text-center"
+              >
+                INTEGRANTES
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <p class="integrantes">Cristhian Beltrán</p>
+                  <p class="integrantes">Yuliana Quintero</p>
+                  <p class="integrantes">Juan David Corrales</p>
+                </div>
+                <div class="col-6">
+                  <p class="integrantes">Alan Melo Giraldo</p>
+                  <p class="integrantes">Dayana Marcela Vallejo</p>
+                  <p class="integrantes">Jessica Manturano</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="js/Busqueda.js"></script>
     <script type="module" src="js/acciones.js"></script>
+
+    <script type="module" src="./js/card.js"></script>
+    <script type="module" src="./js/container-cards.js"></script>
   </body>
 </html>

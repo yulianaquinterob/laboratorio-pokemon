@@ -1,0 +1,99 @@
+body {
+    background-color: #FED32E;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 150px;
+    border-bottom: 0px;
+    margin: 0;
+}
+
+#encabezado {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.delicious-handrawn-regular {
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-style:normal;
+    color: #EB4A2D;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+}
+
+.mansalva-regular {
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #355DA3;
+    border-radius: 15px;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    color: black;
+}
+
+.container-fluid {
+    border-radius: 15px;
+}
+
+.d-inline-block {
+    margin-bottom: -15px;
+}
+
+.text-center {
+    margin-bottom: -15px;
+}
+
+.integrantes {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#titulo-nav {
+    text-align: center;
+}
+
+#footer {
+    background: #8A421C;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+#footer img {
+    max-height: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+#titulo-footer {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*Mansalva
+
+Shadows Into Light
+
+Delicious Handrawn
+*/
