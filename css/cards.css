@@ -1,0 +1,18 @@
+
+#resultadoBusqueda{
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+#listaFavoritos{
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+
