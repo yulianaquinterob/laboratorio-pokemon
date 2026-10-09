@@ -1,9 +1,10 @@
-import
+import {obtenerPokemon} from './api.js'
 
 const inputPokemon = document.getElementById("inputPokemon");
 const btnBuscar = document.getElementById("btnBuscar");
 const btnLimpiar = document.getElementById("btnLimpiar");
 const resultadoBusqueda = document.getElementById("resultadoBusqueda");
+
 
 btnBuscar.addEventListener("click", async () => {
   const nombre = inputPokemon.value.trim().toLowerCase();
@@ -26,3 +27,19 @@ btnLimpiar.addEventListener("click", () => {
   inputPokemon.value = "";
   resultadoBusqueda.innerHTML = "";
 });
+
+const clearBtn = async() => {
+  inputPokemon.value = "";
+  resultadoBusqueda.innerHTML = "";
+}
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     changeColor();
+//     const cards = document.querySelectorAll(".letter-card");
+
+//     cards.forEach(card => {
+//         card.addEventListener("click", () => {
+//             card.classList.toggle("flipped");
+//         });
+//     });
+// });
