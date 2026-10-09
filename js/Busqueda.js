@@ -1,4 +1,4 @@
-import
+
 
 const inputPokemon = document.getElementById("inputPokemon");
 const btnBuscar = document.getElementById("btnBuscar");
