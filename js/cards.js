@@ -32,7 +32,7 @@ export function crearTarjeta(pokemon) {
   const botones = document.createElement("div");
   botones.classList.add("card-body");
   const btnAgregar = document.createElement("button");
-  btnAgregar.classList.add("boton-agregar", "btn", "btn-primary");
+  btnAgregar.classList.add("boton-agregar", "btn", "btn-primary", "me-2");
   btnAgregar.textContent = "Agregar a favoritos";
   const btnEliminar = document.createElement("button");
   btnEliminar.classList.add("btn-eliminar", "btn", "btn-danger");
