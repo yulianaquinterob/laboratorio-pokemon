@@ -11,18 +11,19 @@
   </head>
   <body class="p-4">
     <div class="container">
-
-      <input type="text" id="inputPokemon" placeholder="Pokemon Nombre" />
-      <button type="button" id="btnBuscar" class="btn btn-primary">
-        Buscar
-      </button>
-      <button type="button" id="btnLimpiar" class="btn btn-secondary">
-        Limpiar
-      </button>
+      <form action="">
+        <input type="text" id="inputPokemon" placeholder="Pokemon Nombre" />
+        <button type="submit" id="btnBuscar" class="btn btn-primary">
+          Buscar
+        </button>
+        <button type="button" id="btnLimpiar" class="btn btn-secondary">
+          Limpiar
+        </button>
+      </form>
 
       <h3 class="mt-4">Resultado</h3>
-      <div id="resultadoBusqueda"></div>
-      <list-cards></list-cards>
+      <div id="resultadoBusqueda" class="row justify-content-center my-4"></div>
+      <list-cards id="listaCompleta"></list-cards>
 
       <h3 class="mt-4">Favoritos</h3>
       <div id="listaFavoritos" class="d-flex flex-wrap gap-3"></div>
