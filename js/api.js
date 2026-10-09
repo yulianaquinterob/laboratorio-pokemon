@@ -1,7 +1,7 @@
 const URL_API = "https://pokeapi.co/api/v2/";
 
 const pokemones = await buscarPokemones();
-console.log(pokemones);
+//console.log(pokemones);
 
 //boton buscar pokemon
 // const botonBuscar = document.getElementById('boton-buscar');
@@ -32,9 +32,20 @@ export async function buscarPokemones(){
 }
 
 //buscar Pokemon
-function obtenerPokemon(){
+function obtenerPokemon(nombrePokemon){
 
+//    pokemones.forEach(pokemon => {       
+//     console.log(pokemon.name) // imprime nombres
+    
+//    });
 
+   const pokemonEncontrado = pokemones.filter(pokemon => 
+        pokemon.name?.toLowerCase().includes(nombrePokemon));
+    console.log(pokemonEncontrado) // imprime nombres
+
+    return pokemonEncontrado
 }
 
-console.log(pokemones[0].name);
+//obtenerPokemon("charizard");
+
+//console.log(pokemones[0].name);
